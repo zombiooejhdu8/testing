@@ -1,14 +1,130 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Page</title>
+    <title>Learn Python Programming</title>
+    <style>
+        /* CSS Styling and Color Palette */
+        :root {
+            --primary-blue: #306998;
+            --accent-yellow: #FFE873;
+            --dark-gray: #2B2B2B;
+            --light-bg: #F4F7F6;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-gray);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-blue);
+            color: #FFFFFF;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-yellow);
+            border-radius: 8px 8px 0 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            border-bottom: 2px solid var(--light-bg);
+            padding-bottom: 5px;
+        }
+
+        .highlight-box {
+            background-color: var(--accent-yellow);
+            color: var(--dark-gray);
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        pre {
+            background-color: var(--dark-gray);
+            color: #4CAF50; /* Green text for terminal style */
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .keyword {
+            color: #FF79C6; /* Pink keyword highlight */
+        }
+
+        .string {
+            color: #F1FA8C; /* Yellow string highlight */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777777;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a basic HTML webpage.</p>
-</body>My name is ivan and this is my first html web page</body>
 
+    <header>
+        <h1>Introduction to Python</h1>
+        <p>A simple, powerful, and beginner-friendly programming language</p>
+    </header>
 
+    <main>
+        <section>
+            <h2>What is Python?</h2>
+            <p>Python is an interpreted, high-level, general-purpose programming language. Its design philosophy emphasizes code readability with its notable use of significant whitespace.</p>
+            
+            <div class="highlight-box">
+                Key Takeaway: Python is widely used in Web Development, Data Science, Artificial Intelligence, and Automation.
+            </div>
+        </section>
+
+        <section>
+            <h2>Why Learn Python?</h2>
+            <ul>
+                <li><strong>Easy to Read and Learn:</strong> Syntax closely resembles the English language.</li>
+                <li><strong>Vast Ecosystem:</strong> Offers thousands of third-party libraries and frameworks.</li>
+                <li><strong>Cross-Platform:</strong> Runs seamlessly on Windows, macOS, and Linux.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Your First Python Program</h2>
+            <p>Here is how simple it is to print message output in Python:</p>
+            
+            <pre><code><span class="keyword">def</span> greet():
+    message = <span class="string">"Hello, World!"</span>
+    print(message)
+
+greet()</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Python Beginner's Guide. Styled with CSS.</p>
+    </footer>
+
+</body>
+</html>
